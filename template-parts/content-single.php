@@ -34,7 +34,12 @@ use function JoTheme\Functions\display_posted_on;
 		<?php display_page_title(); ?>
 	</header><!-- .post-header -->
 
-	<?php display_post_thumbnail(); ?>
+	<?php
+	// Only show post thumbnail for writing posts.
+	if ( is_category( 'writing' ) ) :
+		display_post_thumbnail();
+	endif;
+	?>
 
 	<div class="post-content">
 		<?php the_content(); ?>
