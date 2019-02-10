@@ -1,0 +1,84 @@
+//--------------------------------------------------------------
+// Animations
+//--------------------------------------------------------------
+
+// Fade In.
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+// SVG Outline.
+@keyframes setoutline {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+// SVG Fill Logo On Hover.
+@keyframes fillgradient {
+	0% {
+		stroke-dashoffset: 0;
+	}
+
+	50% {
+		stroke-dashoffset: 2300;
+	}
+
+	100% {
+		stroke: url(#jm-gradient);
+		stroke-dashoffset: 0;
+		stroke-width: 25px;
+	}
+}
+
+@keyframes fillgradientcolor {
+	100% {
+		stroke: $color-primary;
+		stroke-dashoffset: 0;
+		stroke-width: 25px;
+	}
+}
+
+// SVG Pop Line.
+@keyframes setpop {
+	100% {
+		stroke: $color-black;
+		stroke-width: 25px;
+	}
+}
+
+// SVG Fill on Hover.
+@keyframes fillpop {
+	100% {
+		stroke: $color-primary;
+		stroke-width: 25px;
+	}
+}
+
+@keyframes fillpopcolor {
+	100% {
+		stroke: $color-primary;
+		stroke-width: 25px;
+	}
+}
+
+// Background animations
+@keyframes gradientbackground {
+	0% {
+		background-position: 0% 51%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 51%;
+	}
+}

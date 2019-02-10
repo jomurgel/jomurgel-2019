@@ -1,0 +1,62 @@
+//--------------------------------------------------------------
+// Logo Mixins
+//--------------------------------------------------------------
+
+//-----------------------------------------
+// Dependencies
+//-----------------------------------------
+@import '../util/mixins/animation';
+
+//-----------------------------------------
+// Mixin
+//-----------------------------------------
+@mixin logo {
+	#jm-logo {
+		height: 66px;
+		margin-top: -25px;
+
+		@include media($tablet-small) {
+			height: 75px;
+		}
+
+		&:hover .sig-line.loaded {
+			animation: fillgradient 0.5s linear forwards;
+		}
+
+		&:hover .sig-dot.loaded {
+			animation: fillpop 0.2s linear forwards;
+		}
+	}
+
+	.sig-line {
+		animation: setoutline 0.75s linear 1.25s forwards;
+		fill: none;
+		stroke: $color-black;
+		stroke-dasharray: 2300;
+		stroke-dashoffset: 2300;
+		stroke-linecap: round;
+		stroke-miterlimit: 10;
+		stroke-width: 25px;
+
+		.visible & {
+			animation: setoutline 0.25s linear forwards;
+		}
+
+		&.loaded {
+			animation: setoutline 0.25s linear forwards;
+		}
+	}
+
+	.sig-dot {
+		animation: setpop 0.1s linear 2s forwards;
+		fill: none;
+		stroke: transparent;
+		stroke-linecap: round;
+		stroke-miterlimit: 10;
+		stroke-width: 35px;
+
+		&.loaded {
+			animation: setpop 0.1s linear forwards;
+		}
+	}
+}
