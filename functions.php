@@ -106,7 +106,7 @@ function setup() {
 			array(
 				'name'      => __( 'Small', 'jo-theme' ),
 				'shortName' => __( 'S', 'jo-theme' ),
-				'size'      => 18,
+				'size'      => 17,
 				'slug'      => 'small',
 			),
 			array(
@@ -124,7 +124,7 @@ function setup() {
 			array(
 				'name'      => __( 'Huge', 'jo-theme' ),
 				'shortName' => __( 'XL', 'jo-theme' ),
-				'size'      => 48,
+				'size'      => 42,
 				'slug'      => 'huge',
 			),
 		)
