@@ -8,6 +8,7 @@
  * @since 1.0.0
  */
 
+use function JoTheme\Functions\display_google_analytics;
 use function JoTheme\Functions\display_site_branding;
 use function JoTheme\Functions\display_search_toggle;
 
@@ -18,6 +19,8 @@ use function JoTheme\Functions\display_search_toggle;
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="profile" href="https://gmpg.org/xfn/11" />
+
+	<?php display_google_analytics(); ?>
 
 	<?php wp_head(); ?>
 </head>

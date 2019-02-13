@@ -618,3 +618,27 @@ function display_category_list() {
 	</aside><!-- .category-list -->
 	<?php
 }
+
+/**
+ * Output Google Analytics.
+ *
+ * @package Jo_Theme
+ * @since 1.0.0
+ */
+function display_google_analytics() {
+	?>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41733129-1"></script><?php // @codingStandardsIgnoreLine. ?>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag(){
+			dataLayer.push( arguments );
+		}
+		gtag( 'js', new Date() );
+
+		gtag( 'config', 'UA-41733129-1' );
+	</script>
+	<?php
+}
