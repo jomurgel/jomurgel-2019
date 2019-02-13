@@ -13,10 +13,13 @@
 @mixin logo {
 	#jm-logo {
 		height: 66px;
-		margin-top: -25px;
 
 		@include media($tablet-small) {
 			height: 75px;
+		}
+
+		@include media($tablet-large) {
+			margin-top: -25px;
 		}
 
 		&:hover .sig-line.loaded {
