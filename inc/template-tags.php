@@ -493,9 +493,10 @@ function display_social_menu() {
  */
 function display_footer_copyright() {
 
-	$logo = get_social_icon_array()['acorn'];
+	$logo  = get_social_icon_array()['acorn'];
+	$heart = get_social_icon_array()['heart'];
 
-	$default_string = sprintf( '<a href="%s">%s</a>. %s <a href="%s" target="_blank">%s</a> %s. Built on %s.', esc_url( 'https://jomurgel.com' ), esc_html__( 'jomurgel', 'jo-theme' ), esc_html__( 'Made with &hearts; for the', 'jo-theme' ), esc_url( 'https://opensource.org', 'jo-theme' ), esc_html__( 'open source', 'jo-theme' ), esc_html__( 'community', 'jo-theme' ), '<a href="' . esc_url( 'https://github.com/jomurgel/project-acorn-theme' ) . '">' . get_new_content( $logo ) . '</a>' ); // WPCS: XSS Ok.
+	$default_string = sprintf( '<a href="%s">%s</a>. %s <a href="%s" target="_blank">%s</a> %s. Built on %s.', esc_url( 'https://jomurgel.com' ), esc_html__( 'jomurgel', 'jo-theme' ), get_new_content( 'Made with ' . $heart . ' for the', 'jo-theme' ), esc_url( 'https://opensource.org', 'jo-theme' ), esc_html__( 'open source', 'jo-theme' ), esc_html__( 'community', 'jo-theme' ), '<a href="' . esc_url( 'https://github.com/jomurgel/project-acorn-theme' ) . '">' . get_new_content( $logo ) . '</a>' ); // WPCS: XSS Ok.
 
 	$copy_language = ! empty( get_theme_mod( 'footer_copyright' ) ) ? get_theme_mod( 'footer_copyright' ) : $default_string;
 
