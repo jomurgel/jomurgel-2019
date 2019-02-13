@@ -74,6 +74,8 @@
 			@include size($card-height);
 
 			background-color: $color-light-gray;
+			border: 1px solid $color-light-gray;
+			font-size: 0;
 			transition: $transition-opacity;
 
 			@include media($tablet-small) {
