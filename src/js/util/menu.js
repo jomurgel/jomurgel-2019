@@ -12,9 +12,19 @@ export const initMenu = () => {
   const body       = document.getElementsByTagName( 'body' )[0];
   const menuToggle = document.getElementById( 'menu-toggle' );
   const menu       = document.getElementById( 'primary' );
+
+  // Return if no menu exists.
+  if ( null === menu ) {
+    return;
+  }
+
   const menuLinks  = document.getElementById( 'primary' ).getElementsByTagName( 'a' );
 
-  setTabIndex( menuLinks, '-1' );
+  if ( hasClass( body, 'nav-is-visible' ) ) {
+    setTabIndex( menuLinks, '0' );
+  } else {
+    setTabIndex( menuLinks, '-1' );
+  }
 
   // Handle menu toggle button.
   menuToggle.addEventListener( 'click', toggleMenu );
