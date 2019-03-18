@@ -270,5 +270,5 @@ if ( defined( 'WPSEO_VERSION' ) ) {
 	function move_yoast_to_bottom() {
 		return 'low';
 	}
-	add_filter( 'wpseo_metabox_prio', 'AcornTheme\Functions\move_yoast_to_bottom' );
+	add_filter( 'wpseo_metabox_prio', 'JoTheme\Functions\move_yoast_to_bottom' );
 }
