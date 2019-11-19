@@ -58,16 +58,19 @@ body {
 
 	// Adjust the position of the menu when the admin bar is present.
 	.admin-bar.nav-is-visible & {
+		top: calc(46px);
 
-		top: calc(#{$gutter} + 46px);
+		@include media($wp-admin-bar) {
+			top: calc(#{$gutter} / 1.186666667 + 32px);
+		}
 
 		@include media($tablet-large) {
-			top: calc(#{$gutter} + 32px);
+			top: calc(#{$gutter} * 1.186666667 + 32px);
 		}
 	}
 
 	@include media($tablet-large) {
-		@include padding($gutter);
+		@include padding($gutter / 1.667 $gutter $gutter);
 
 		.nav-is-visible & {
 			@include padding(0);
@@ -75,7 +78,7 @@ body {
 			background-color: transparent;
 			min-height: 0;
 			right: $gutter;
-			top: $gutter;
+			top: $gutter * 1.2;
 			width: calc(100% - #{$spacing * 3});
 		}
 	}
@@ -172,7 +175,7 @@ body {
 // Menu Button
 //-----------------------------------------
 #menu-toggle {
-	@include position(fixed, $gutter / 3 $gutter / 3 null null);
+	@include position(fixed, $gutter / 1.667 $gutter / 3 null null);
 	@include size($gutter / 2, $gutter / 2);
 
 	background-color: transparent;
@@ -192,10 +195,14 @@ body {
 
 	// Adjust the position of the menu when the admin bar is present.
 	.admin-bar & {
-		@include position(fixed, $gutter / 2 + 46px $gutter / 2 null null);
+		@include position(fixed, $gutter / 2 + 46px $gutter / 3 null null);
+
+		@include media($wp-admin-bar) {
+			@include position(fixed, $gutter / 2 + 32px $gutter / 3 null null);
+		}
 
 		@include media($tablet-large) {
-			@include position(fixed, $gutter + 32px $gutter null null);
+			@include position(fixed, $gutter - 32px $gutter null null);
 		}
 	}
 
