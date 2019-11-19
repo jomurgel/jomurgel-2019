@@ -97,11 +97,11 @@ msgstr ""
 msgid "Accent Cerulean"
 msgstr ""
 
-#: ../header.php:29
+#: ../header.php:38
 msgid "Skip to Content"
 msgstr ""
 
-#: ../header.php:39
+#: ../header.php:48
 msgid "Primary Navigation"
 msgstr ""
 
