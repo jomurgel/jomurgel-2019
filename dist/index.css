@@ -775,7 +775,7 @@ body.menu-open {
   width: 320px;
   z-index: 500; }
   .admin-bar.nav-is-visible #primary {
-    top: calc(75px + 46px); }
+    top: calc(46px); }
   #primary::after {
     content: '';
     left: 0;
@@ -824,7 +824,7 @@ body.menu-open {
 
 #menu-toggle {
   position: fixed;
-  top: 25px;
+  top: 44.991px;
   right: 25px;
   height: 37.5px;
   width: 37.5px;
@@ -838,7 +838,7 @@ body.menu-open {
   .admin-bar #menu-toggle {
     position: fixed;
     top: 83.5px;
-    right: 37.5px; }
+    right: 25px; }
   #menu-toggle:hover > span {
     height: 2px;
     width: 15px; }
@@ -1512,9 +1512,7 @@ figure,
     margin: 0 auto; }
 
 #wpadminbar {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: fixed !important;
   -webkit-transition: left 0.2s ease-in-out, margin 0.2s ease-in-out, opacity 0.2s ease-in-out, padding 0.2s ease-in-out, right 0.2s ease-in-out;
   transition: left 0.2s ease-in-out, margin 0.2s ease-in-out, opacity 0.2s ease-in-out, padding 0.2s ease-in-out, right 0.2s ease-in-out; }
 
@@ -1782,6 +1780,12 @@ figure,
               flex: 0 0 auto;
       width: calc(100% - 165px); } }
       @media screen and (min-width: 783px) {
+      .admin-bar.nav-is-visible #primary {
+        top: calc(75px / 1.186666667 + 32px); }
+      .admin-bar #menu-toggle {
+        position: fixed;
+        top: 69.5px;
+        right: 25px; }
     #wpadminbar {
       margin-left: auto;
       margin-top: 0;
@@ -1794,15 +1798,15 @@ figure,
       .site-header #jm-logo {
         margin-top: -25px; }
       .admin-bar.nav-is-visible #primary {
-        top: calc(75px + 32px); }
+        top: calc(75px * 1.186666667 + 32px); }
     #primary {
-      padding: 4.688rem; }
+      padding: 2.750rem 4.688rem 4.688rem; }
       .nav-is-visible #primary {
         padding: 0;
         background-color: transparent;
         min-height: 0;
         right: 75px;
-        top: 75px;
+        top: 90px;
         width: calc(100% - 450px); }
       #primary > ul {
         padding: 0 4.688rem 4.688rem; }
@@ -1833,7 +1837,7 @@ figure,
         display: none; }
       .admin-bar #menu-toggle {
         position: fixed;
-        top: 107px;
+        top: 43px;
         right: 75px; }
     .search-toggle {
       position: fixed;
