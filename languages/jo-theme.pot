@@ -1,4 +1,4 @@
-# Copyright (C) 2019 jo-theme
+# Copyright (C) 2020 jo-theme
 # This file is distributed under the same license as the jo-theme package.
 msgid ""
 msgstr ""
