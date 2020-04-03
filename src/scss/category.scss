@@ -6,14 +6,14 @@
 // Import Global Elements
 //-----------------------------------------
 @import './global';
-@import './shared/post-card';
+@import './shared/post-grid';
 @import './shared/post-navigation';
 
 //-----------------------------------------
 // Post River
 //-----------------------------------------
 .post-river {
-	@include post-card('category');
+	@include post-grid();
 }
 
 //-----------------------------------------

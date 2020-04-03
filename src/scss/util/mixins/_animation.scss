@@ -53,6 +53,13 @@
 	}
 }
 
+@keyframes setpopWhite {
+	100% {
+		stroke: $color-white;
+		stroke-width: 25px;
+	}
+}
+
 // SVG Fill on Hover.
 @keyframes fillpop {
 	100% {

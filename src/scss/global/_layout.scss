@@ -65,6 +65,28 @@ body {
 } // .site-wrapper, .display-flex
 
 //-----------------------------------------
+// Site Layout Grid Elements
+// Fallback to flexbox
+//-----------------------------------------
+.display-grid {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+	@supports (display: grid) {
+		align-items: stretch;
+		display: grid;
+		gap: $gutter / 3;
+		grid-template-columns: 1fr 1fr;
+		justify-items: stretch;
+
+		@include media($tablet-small) {
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+	}
+}
+
+//-----------------------------------------
 // Header
 //-----------------------------------------
 .site-header {
@@ -96,13 +118,12 @@ body {
 .site-footer {
 	@extend .container;
 
-	border-top: 1px solid $color-light-gray;
 	color: $color-mid-gray;
 	font-size: 90%;
 	margin-bottom: 10px;
 	margin-top: $gutter;
-	padding-top: $gutter / 3;
-	text-align: center;
+	padding-top: $gutter;
+	text-align: left;
 
 	@include media($tablet-small) {
 		padding-top: $gutter;

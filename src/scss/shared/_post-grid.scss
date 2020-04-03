@@ -1,0 +1,78 @@
+//--------------------------------------------------------------
+// Post Card Mixin
+//--------------------------------------------------------------
+
+//-----------------------------------------
+// Dependencies
+//-----------------------------------------
+@import './button';
+@import './links';
+@import './post-meta';
+
+//-----------------------------------------
+// Photo category-specific styles
+// And overrides
+//-----------------------------------------
+.category-photography {
+	background-color: $color-black;
+
+	// Logo.
+	.site-header .sig-line {
+		stroke: $color-white;
+	}
+
+	.site-header .sig-dot {
+
+		&.loaded {
+			animation: setpopWhite 0.1s linear forwards;
+		}
+	}
+
+	// Nav.
+	#primary > ul li a {
+		color: $color-white;
+	}
+
+	// Footer.
+	.site-footer {
+		color: $color-warm-gray;
+
+		.footer-logo {
+			opacity: 0.8;
+		}
+
+		a {
+			color: $color-warm-gray;
+		}
+	}
+}
+
+//-----------------------------------------
+// Mixin
+//-----------------------------------------
+@mixin post-grid() {
+
+	.page-header {
+		flex: 0 0 100%;
+	}
+
+	.post-thumbnail {
+		margin: 0;
+		opacity: 1;
+		transition: $transition-opacity;
+		width: 100%;
+
+		&:hover,
+		&:focus {
+			opacity: 0.7;
+		}
+
+		&-inner {
+			display: block;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
