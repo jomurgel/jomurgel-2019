@@ -55,6 +55,8 @@ function setup() {
 	*/
 	add_image_size( 'river-thumbnail-retina', 160, 160, array( 'center', 'center' ) );
 	add_image_size( 'river-thumbnail', 80, 80, array( 'center', 'center' ) );
+	add_image_size( 'river-photo-retina', 350, 350, array( 'center', 'center' ) );
+	add_image_size( 'river-photo', 175, 175, array( 'center', 'center' ) );
 
 	// This theme uses wp_nav_menu() in two locations.
 	register_nav_menus(
