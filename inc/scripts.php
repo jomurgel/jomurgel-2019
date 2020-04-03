@@ -18,12 +18,19 @@ function init_scripts() {
 
 	// Array of script locations.
 	$scripts = array(
-		'error'  => is_404(),
-		'home'   => is_front_page() && ! is_home(),
-		'index'  => is_home() || ( is_home() && is_front_page() ) || is_archive(),
-		'page'   => is_page() && ! is_front_page(),
-		'search' => is_search(),
-		'single' => is_single(),
+		'category' => is_category('photography'),
+		'error'    => is_404(),
+		'home'     => is_front_page() && ! is_home(),
+		'index'    => is_home()
+			|| (
+				is_home()
+				&& is_front_page()
+			)
+			|| is_archive()
+			&& ! is_category('photography'),
+		'page'     => is_page() && ! is_front_page(),
+		'search'   => is_search(),
+		'single'   => is_single(),
 	);
 
 	// Loop through and register dynamically.
