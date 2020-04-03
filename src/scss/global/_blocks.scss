@@ -39,7 +39,7 @@ p {
 	@include margin(0 null $gutter / 2);
 
 	border-radius: $radius;
-	display: inline-flex;
+	display: flex;
 	flex-direction: column;
 	overflow: hidden;
 
