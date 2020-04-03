@@ -14,16 +14,26 @@ use function JoTheme\Functions\display_page_title;
 get_header();
 ?>
 
-		<section class="post-river">
+		<section class="post-river display-grid">
 
 			<?php
 			if ( have_posts() ) :
+				?>
 
-				display_page_title();
+				<span class="screen-reader-text">
+					<?php display_page_title(); ?>
+				</span>
 
+				<?php
 				// Load posts loop.
 				while ( have_posts() ) :
 					the_post();
+
+					// Don't show posts without a thumbnail.
+					// Assume we're diligant about this.
+					if ( ! has_post_thumbnail() ) {
+						continue;
+					}
 
 					get_template_part( 'template-parts/content', 'photography' );
 				endwhile;
