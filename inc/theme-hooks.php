@@ -272,3 +272,12 @@ if ( defined( 'WPSEO_VERSION' ) ) {
 	}
 	add_filter( 'wpseo_metabox_prio', 'JoTheme\Functions\move_yoast_to_bottom' );
 }
+/**
+ * Increase image compression to 100%;
+ *
+ * @return int increase image compression from default 60.
+ */
+function increase_image_compression() {
+	return 100;
+}
+add_filter( 'jpeg_quality', __NAMESPACE__ . '\increase_image_compression' );
