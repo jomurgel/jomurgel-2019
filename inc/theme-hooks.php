@@ -281,3 +281,20 @@ function increase_image_compression() {
 	return 100;
 }
 add_filter( 'jpeg_quality', __NAMESPACE__ . '\increase_image_compression' );
+
+/**
+ * Modify photo category query.
+ *
+ * @param object $query data
+ * @return object $query data object.
+ */
+function increase_photo_category_query( $query ) {
+	if (
+		$query->is_main_query()
+		&& is_category( 'photography' )
+		&& ! is_admin()
+	) {
+		$query->set( 'posts_per_page', 25 );
+	}
+}
+add_action( 'pre_get_posts', __NAMESPACE__ . '\increase_photo_category_query' );
