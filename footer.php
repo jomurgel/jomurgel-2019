@@ -11,11 +11,14 @@
 use function JoTheme\Functions\display_category_list;
 use function JoTheme\Functions\display_footer_copyright;
 use function JoTheme\Functions\display_social_menu;
-use function JoTheme\Functions\display_footer_mark;
 
 ?>
 
-	<?php display_category_list(); ?>
+	<?php
+	if ( ! is_category('photography') ) {
+		display_category_list();
+	}
+	?>
 
 	</main><!-- .site-content -->
 
