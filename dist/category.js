@@ -81,15 +81,15 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/error.js":
-/*!*************************!*\
-  !*** ./src/js/error.js ***!
-  \*************************/
+/***/ "./src/js/category.js":
+/*!****************************!*\
+  !*** ./src/js/category.js ***!
+  \****************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -97,7 +97,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _global__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./global */ "./src/js/global.js");
 /**
- * This is the partial for our error page.
+ * This is the partial for our index/archive page.
  */
 
 /**
@@ -424,10 +424,10 @@ var toggleSearch = function toggleSearch() {
 
 /***/ }),
 
-/***/ "./src/scss/error.scss":
-/*!*****************************!*\
-  !*** ./src/scss/error.scss ***!
-  \*****************************/
+/***/ "./src/scss/category.scss":
+/*!********************************!*\
+  !*** ./src/scss/category.scss ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -435,18 +435,18 @@ var toggleSearch = function toggleSearch() {
 
 /***/ }),
 
-/***/ 3:
-/*!*****************************************************!*\
-  !*** multi ./src/js/error.js ./src/scss/error.scss ***!
-  \*****************************************************/
+/***/ 0:
+/*!***********************************************************!*\
+  !*** multi ./src/js/category.js ./src/scss/category.scss ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! ./src/js/error.js */"./src/js/error.js");
-module.exports = __webpack_require__(/*! ./src/scss/error.scss */"./src/scss/error.scss");
+__webpack_require__(/*! ./src/js/category.js */"./src/js/category.js");
+module.exports = __webpack_require__(/*! ./src/scss/category.scss */"./src/scss/category.scss");
 
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=error.js.map
+//# sourceMappingURL=category.js.map

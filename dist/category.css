@@ -1549,130 +1549,112 @@ figure,
   -webkit-transition: left 0.2s ease-in-out, margin 0.2s ease-in-out, opacity 0.2s ease-in-out, padding 0.2s ease-in-out, right 0.2s ease-in-out;
   transition: left 0.2s ease-in-out, margin 0.2s ease-in-out, opacity 0.2s ease-in-out, padding 0.2s ease-in-out, right 0.2s ease-in-out; }
 
-.fluid-container {
-  height: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-  position: relative; }
-  .fluid-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%; }
+.category-photography {
+  background-color: #010101; }
+  .category-photography .site-header .sig-line {
+    stroke: white; }
+  .category-photography .site-header .sig-dot.loaded {
+    -webkit-animation: setpopWhite 0.1s linear forwards;
+            animation: setpopWhite 0.1s linear forwards; }
+  .category-photography #primary > ul li a {
+    color: white; }
+  .category-photography .site-footer {
+    color: rgba(255, 255, 255, 0.1); }
+    .category-photography .site-footer .footer-logo {
+      opacity: 0.8; }
+    .category-photography .site-footer a {
+      color: rgba(255, 255, 255, 0.1); }
 
-.post-single .post-title {
-  display: inline-block; }
-
-.post-single .post-meta {
-  margin: 0 0 2.313rem;
+.post-river .page-header {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  font-size: 1.250rem;
-  font-weight: 300;
+          flex: 0 0 100%; }
+
+.post-river .post-thumbnail {
+  margin: 0;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
   width: 100%; }
-  .post-single .post-meta .posted-on {
-    display: inline-block; }
-
-.post-single .post-categories {
-  display: block; }
-  .post-single .post-categories a {
-    padding: 0.125rem 0.938rem;
-    font-size: 1.000rem;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    border: 1px solid #010101;
-    border-radius: 400px;
-    display: inline-block;
-    font-style: normal;
-    text-decoration: none;
-    -webkit-transition: background 0.5s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
-    transition: background 0.5s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
-    cursor: pointer;
-    background: white;
-    color: #010101;
-    text-decoration: none; }
-    .post-single .post-categories a:hover, .post-single .post-categories a:active {
-      border: 1px solid #d7046b;
-      color: #d7046b; }
-    .post-single .post-categories a:focus {
-      border: 1px dashed #900aaa;
-      color: #900aaa;
-      outline: 0; }
-  .post-single .post-categories::before {
+  .post-river .post-thumbnail:hover, .post-river .post-thumbnail:focus {
+    opacity: 0.7; }
+  .post-river .post-thumbnail-inner {
     display: block; }
+    .post-river .post-thumbnail-inner img {
+      width: 100%; }
 
-.post-single .post-footer .share-buttons {
-  margin: 4.688rem 0 0;
-  padding: 1.563rem 0 0;
-  border-top: 1px solid #f1f6fa;
+.pagination-container .page-numbers {
+  margin: 0;
+  padding: 0;
   list-style: none; }
-  .post-single .post-footer .share-buttons li {
+  .pagination-container .page-numbers li {
     display: inline-block;
-    font-size: 80%;
-    margin-right: 10px; }
-    .post-single .post-footer .share-buttons li:last-child {
+    font-size: 1.375rem;
+    margin-right: 20px; }
+    .pagination-container .page-numbers li:last-child {
       margin-right: 0; }
-    .post-single .post-footer .share-buttons li > .share-to {
-      font-size: 80%;
-      letter-spacing: 0.063em;
-      text-transform: uppercase; }
-    .post-single .post-footer .share-buttons li.facebook > a {
-      padding: 0.125rem 0.938rem;
-      font-size: 1.000rem;
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none;
-      border: 1px solid #010101;
-      border-radius: 400px;
-      display: inline-block;
+    .pagination-container .page-numbers li .current {
+      color: #d7046b;
+      font-weight: 600; }
+    .pagination-container .page-numbers li a {
+      color: #010101;
       font-style: normal;
       text-decoration: none;
-      -webkit-transition: background 0.5s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
-      transition: background 0.5s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
-      cursor: pointer;
-      background: linear-gradient(45deg, #3b5997, #0084ff, #2ba1e7, #22c2dd);
-      background-position: 5%;
-      background-size: 400% 400%;
-      border: 1px solid transparent;
-      color: white;
-      -webkit-transition: background 0.5s ease-in-out;
-      transition: background 0.5s ease-in-out; }
-      .post-single .post-footer .share-buttons li.facebook > a:active, .post-single .post-footer .share-buttons li.facebook > a:hover {
-        background-position: 50%; }
-      .post-single .post-footer .share-buttons li.facebook > a:focus {
-        background-position: 100%;
-        border: 1px dashed #010101;
-        outline: 0; }
-    .post-single .post-footer .share-buttons li.twitter > a {
-      padding: 0.125rem 0.938rem;
-      font-size: 1.000rem;
-      -webkit-appearance: none;
-         -moz-appearance: none;
-              appearance: none;
-      border: 1px solid #010101;
-      border-radius: 400px;
-      display: inline-block;
-      font-style: normal;
-      text-decoration: none;
-      -webkit-transition: background 0.5s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
-      transition: background 0.5s ease-in-out, border 0.2s ease-in-out, color 0.2s ease-in-out;
-      cursor: pointer;
-      background: linear-gradient(45deg, #1da1f1, #407bf0, #6950ee, #961eeb);
-      background-position: 5%;
-      background-size: 400% 400%;
-      border: 1px solid transparent;
-      color: white;
-      -webkit-transition: background 0.5s ease-in-out;
-      transition: background 0.5s ease-in-out; }
-      .post-single .post-footer .share-buttons li.twitter > a:active, .post-single .post-footer .share-buttons li.twitter > a:hover {
-        background-position: 50%; }
-      .post-single .post-footer .share-buttons li.twitter > a:focus {
-        background-position: 100%;
-        border: 1px dashed #010101;
-        outline: 0; }
+      -webkit-transition: color 0.2s ease-in-out, outline 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out, outline 0.2s ease-in-out;
+      position: relative; }
+      .pagination-container .page-numbers li a:hover, .pagination-container .page-numbers li a:active {
+        color: #d7046b; }
+      .pagination-container .page-numbers li a:focus {
+        color: #fe4f45;
+        outline: 1px dashed #010101; }
+      .pagination-container .page-numbers li a.next {
+        padding-right: 26px; }
+        .pagination-container .page-numbers li a.next::before {
+          position: absolute;
+          top: 50%;
+          right: 0; }
+        .pagination-container .page-numbers li a.next::after {
+          position: absolute;
+          top: 50%;
+          right: 1px;
+          border-width: 1px 1px 0 0; }
+      .pagination-container .page-numbers li a.prev {
+        padding-left: 26px; }
+        .pagination-container .page-numbers li a.prev::before {
+          position: absolute;
+          top: 50%;
+          left: 0; }
+        .pagination-container .page-numbers li a.prev::after {
+          position: absolute;
+          top: 50%;
+          left: 1px;
+          border-width: 0 0 1px 1px; }
+      .pagination-container .page-numbers li a.next::before, .pagination-container .page-numbers li a.prev::before {
+        height: 1px;
+        width: 15px;
+        background-color: #010101;
+        content: '';
+        -webkit-transition: background 0.5s ease-in-out;
+        transition: background 0.5s ease-in-out; }
+      .pagination-container .page-numbers li a.next::after, .pagination-container .page-numbers li a.prev::after {
+        height: 5px;
+        width: 5px;
+        border-color: #010101;
+        border-style: solid;
+        content: '';
+        -webkit-transform: translateY(-2px) rotate(45deg);
+                transform: translateY(-2px) rotate(45deg);
+        -webkit-transition: border 0.2s ease-in-out;
+        transition: border 0.2s ease-in-out; }
+      .pagination-container .page-numbers li a.next:hover::before, .pagination-container .page-numbers li a.prev:hover::before {
+        background-color: #d7046b; }
+      .pagination-container .page-numbers li a.next:hover::after, .pagination-container .page-numbers li a.prev:hover::after {
+        border-color: #d7046b; }
+      .pagination-container .page-numbers li a.next:focus::before, .pagination-container .page-numbers li a.prev:focus::before {
+        background-color: #fe4f45; }
+      .pagination-container .page-numbers li a.next:focus::after, .pagination-container .page-numbers li a.prev:focus::after {
+        border-color: #fe4f45; }
       @media screen and (min-width: 768px) {
     .display-flex {
       -webkit-box-orient: horizontal;
@@ -1765,20 +1747,7 @@ figure,
       table.wp-block-table td, .wp-block-table td {
         border-bottom: 0;
         display: table-cell;
-        text-align: center; }
-    .post-single .post-categories {
-      display: inline-block; }
-      .post-single .post-categories::before {
-        margin: 0 1.000rem;
-        height: 1px;
-        width: 50px;
-        background-color: #929899;
-        bottom: 5px;
-        content: '';
-        display: inline-block;
-        position: relative; }
-    .post-single .post-footer .share-buttons {
-      padding: 4.688rem 0 0; } }
+        text-align: center; } }
       @media screen and (min-width: 783px) {
       .admin-bar.nav-is-visible #primary {
         top: calc(75px / 1.186666667 + 32px); }
@@ -1954,4 +1923,4 @@ figure,
         width: calc(100vw - 150px); } }
 
 
-/*# sourceMappingURL=page.css.map*/
+/*# sourceMappingURL=category.css.map*/
