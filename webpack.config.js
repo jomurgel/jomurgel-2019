@@ -12,6 +12,7 @@ const path                  = require( 'path' ),
 const config = {
   context: __dirname, // eslint-disable-line
   entry: {
+    category: [ './src/js/category.js', './src/scss/category.scss' ],
     customizer: [ './src/js/customizer.js' ],
     editor: [ './src/scss/editor.scss' ],
     error: [ './src/js/error.js', './src/scss/error.scss' ],
